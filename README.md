@@ -15,3 +15,8 @@ Clean, versatile, it just clicks!
 Tag along, share tips. Let's code and learn!
 
 Happy coding! 🎉
+
+Source : 
+100 Days of Code: The Complete Python Pro Bootcamp (by App Brewery - Angela Yu)
+BTK Akademi - Sıfırdan İleri Seviye Python Programlama (by Sadık Turan)
+
