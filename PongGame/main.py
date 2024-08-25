@@ -5,6 +5,8 @@ import time
 
 DEF_PADDLE_R_COORDS = (350, 0)
 DEF_PADDLE_L_COORDS = (-350, 0)
+TOP_BOUNCING_COORD = 280
+BOTTOM_BOUNCING_COORD = -280
 
 r_paddle = Paddle(DEF_PADDLE_R_COORDS)
 l_paddle = Paddle(DEF_PADDLE_L_COORDS)
@@ -27,7 +29,9 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
-    ball.ball_move()
+    ball.move()
+    if ball.ycor() > TOP_BOUNCING_COORD or ball.ycor() < BOTTOM_BOUNCING_COORD:
+        ball.bounce()
 
 
 screen.exitonclick()
