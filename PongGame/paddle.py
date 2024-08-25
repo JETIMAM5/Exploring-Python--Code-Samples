@@ -1,4 +1,8 @@
 from turtle import Turtle
+from ball import Ball
+
+ball = Ball()
+ball.hideturtle()
 
 
 class Paddle(Turtle):
@@ -9,11 +13,16 @@ class Paddle(Turtle):
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.penup()
         self.goto(position)
+        self.movement = 20
 
     def go_up(self):
-        new_y = self.ycor() + 20
+        new_y = self.ycor() + self.movement
         self.goto(self.xcor(), new_y)
+        if ball.bounce_x():
+            self.movement += 20
 
     def go_down(self):
-        new_y = self.ycor() - 20
+        new_y = self.ycor() - self.movement
         self.goto(self.xcor(), new_y)
+        if ball.bounce_x():
+            self.movement -= 20
