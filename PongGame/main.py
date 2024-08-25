@@ -30,8 +30,14 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
     ball.move()
+
+    # Detect collusion with the walls (top and the bottom)
     if ball.ycor() > TOP_BOUNCING_COORD or ball.ycor() < BOTTOM_BOUNCING_COORD:
-        ball.bounce()
+        ball.bounce_y()
+
+    # Detect collusion with the paddles
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
+        ball.bounce_x()
 
 
 screen.exitonclick()
