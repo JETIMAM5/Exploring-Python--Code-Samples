@@ -36,7 +36,7 @@ while game_is_on:
     # Detect collusion with wall
     if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
         scoreboard.reset()
-        snake.extend()
+        snake.reset()
 
     # Detect collusion with the tail
     for segment in snake.segments[1:]:
