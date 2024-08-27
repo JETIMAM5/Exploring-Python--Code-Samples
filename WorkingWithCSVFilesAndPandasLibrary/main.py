@@ -16,7 +16,7 @@
 
 import pandas
 
-data = pandas.read_csv('weather_data.csv')
+# data = pandas.read_csv('weather_data.csv')
 
 # # print(type(data))  # = <class 'pandas.core.frame.DataFrame'> => LIKE EXCEL TABLE
 # print(type(data["temp"]))  # = <class 'pandas.core.series.Series'> => LIKE JUST ONE COLUMN OF AN EXCEL TABLE
@@ -51,12 +51,35 @@ data = pandas.read_csv('weather_data.csv')
 
 # --------------------------------------------------------------------------------------------------------------------
 
-# Creating a DataFrame from scratch
-data_dict = {
-    "students": ["Amy", "James", "John"],
-    "scores": [76, 56, 65]
+# # Creating a DataFrame from scratch
+# data_dict = {
+#     "students": ["Amy", "James", "John"],
+#     "scores": [76, 56, 65]
+# }
+# data_2 = pandas.DataFrame(data_dict)
+# print(data_2)
+# data_2.to_csv('new_data.csv')
+
+# --------------------------------------------------------------------------------------------------------------------
+
+bdata = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+
+black_fur = sum(bdata["Primary Fur Color"] == "Black")
+cinnamon_fur = sum(bdata["Primary Fur Color"] == "Cinnamon")
+gray_fur = sum(bdata["Primary Fur Color"] == "Gray")
+
+print(black_fur)
+print(cinnamon_fur)
+print(gray_fur)
+
+fur_colors = {
+    "Fur Color": ["Black", "Cinnamon", "Gray",],
+    "Count": [black_fur, cinnamon_fur, gray_fur],
 }
-data_2 = pandas.DataFrame(data_dict)
-print(data_2)
-data_2.to_csv('new_data.csv')
+fur_color_datas = pandas.DataFrame(fur_colors)
+fur_color_datas.to_csv("fur_colors.csv")
+
+squirrel_data = pandas.read_csv("fur_colors.csv")
+print(squirrel_data)
+
 
