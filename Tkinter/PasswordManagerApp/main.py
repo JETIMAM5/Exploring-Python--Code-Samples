@@ -1,0 +1,41 @@
+from tkinter import *
+
+# ---------------------------- PASSWORD GENERATOR ------------------------------- #
+
+# ---------------------------- SAVE PASSWORD ------------------------------- #
+
+# ---------------------------- UI SETUP ------------------------------- #
+window = Tk()
+window.title('Password Manager')
+window.config(padx=20, pady=20)
+
+# labels
+website_label = Label(window, text='Website:')
+email_label = Label(window, text='Email/Username:')
+password_label = Label(window, text='Password:')
+website_label.grid(row=1, column=0, sticky="E")
+email_label.grid(row=2, column=0, sticky="E")
+password_label.grid(row=3, column=0, sticky="E")
+
+# Entries
+website_entry = Entry(window, width=35)
+email_entry = Entry(window, width=35)
+password_entry = Entry(window, width=21)
+email_entry.grid(row=1, column=1, columnspan=2, sticky="EW")
+website_entry.grid(row=2, column=1, columnspan=2, sticky="EW")
+password_entry.grid(row=3, column=1, sticky="EW")
+
+# Buttons
+generate_button = Button(window, text="Generate Password")
+add_button = Button(window, text="Add", width=36)
+generate_button.grid(row=3, column=2, sticky="EW")
+add_button.grid(row=4, column=1, columnspan=2, sticky="EW")
+
+
+canvas = Canvas(window, width=200, height=200)
+logo = PhotoImage(file='logo.png')
+canvas.create_image(100, 100, image=logo)
+canvas.grid(column=1, row=0)
+
+
+window.mainloop()
