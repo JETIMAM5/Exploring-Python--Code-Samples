@@ -4,9 +4,9 @@ import os
 import datetime as dt
 import pandas as pd
 
-MY_EMAIL = "email@gmail.com"
-APP_PASSWORD = "app_password"
-LETTER_DIRECTORY = ("/letter_templates")
+MY_EMAIL = "beratyetis5859@gmail.com"
+APP_PASSWORD = "weor lryd itkc qgos"
+LETTER_DIRECTORY = os.path.join(os.getcwd(), "letter_templates")
 
 
 def get_letter_files(directory):
