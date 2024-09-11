@@ -15,7 +15,7 @@ Clean, versatile, it just clicks!
 Tag along, share tips. Let's code and learn!
 
 Happy coding! 🎉
-
+P.S. : Don't forget to explore every folder, as many of them contain small but tricky projects that might surprise you!
 Source : 
 100 Days of Code: The Complete Python Pro Bootcamp (by App Brewery - Angela Yu)  
 
