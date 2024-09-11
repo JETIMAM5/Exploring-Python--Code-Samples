@@ -4,8 +4,8 @@ import os
 import datetime as dt
 import pandas as pd
 
-MY_EMAIL = "beratyetis5859@gmail.com"
-APP_PASSWORD = "weor lryd itkc qgos"
+MY_EMAIL = "email@gmail.com"
+APP_PASSWORD = "app pasword"
 LETTER_DIRECTORY = os.path.join(os.getcwd(), "letter_templates")
 
 
