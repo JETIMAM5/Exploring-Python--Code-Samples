@@ -20,7 +20,7 @@ Happy coding! 🎉
 P.S. : Don't forget to explore every folder, as many of them contain small but tricky projects that might surprise you!
 
 
-Source : 
+References : 
 
 
 100 Days of Code: The Complete Python Pro Bootcamp (by App Brewery - Angela Yu)  
