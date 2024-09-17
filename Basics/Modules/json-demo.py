@@ -18,7 +18,7 @@ class UserRepository:
 
     def loadUser(self):
         if os.path.exists("users.json"):
-            with open("users.json","r",encoding="utf-8") as file:
+            with open("users.json", "r", encoding="utf-8") as file:
                 users = json.load(file)
                 for user in users:
                     user = json.loads(user)
@@ -58,7 +58,7 @@ class UserRepository:
         for user in self.users:
             liste.append(json.dumps(user.__dict__))
 
-        with open("users.json","w") as file :
+        with open("users.json", "w") as file :
             json.dump(liste,file)
 
 repository = UserRepository()

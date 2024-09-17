@@ -8,7 +8,7 @@
 #    print("File is closed...")
 #    file.close() 
 #--------------------------------------------------------------------------------------------------------------------
-file = open("newfile.txt","r",encoding="utf-8")
+file = open("newfile.txt", "r", encoding="utf-8")
 
 # 1st Way to reading datas from file
 # for i in file:

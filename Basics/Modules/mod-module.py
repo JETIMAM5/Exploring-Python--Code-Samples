@@ -1,5 +1,4 @@
 import mod
-import math
 
 # result = help(mod)
 # result = help(mod.func)

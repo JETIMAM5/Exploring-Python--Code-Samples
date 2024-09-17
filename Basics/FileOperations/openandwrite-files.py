@@ -20,4 +20,4 @@
 # file.close
 #-------------------------------------------------------------------------------------------------------------------------------
 #'x' = exclusive creation : if the file already exists , outputs a FileExistsError exception
-file = open("newfile2.txt","x",encoding="utf-8")
+file = open("newfile2.txt", "x", encoding="utf-8")

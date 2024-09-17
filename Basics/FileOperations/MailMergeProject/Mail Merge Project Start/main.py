@@ -1,10 +1,10 @@
 PLACEHOLDER = "[name]"
 
-with open("./Input/Letters/starting_letter.txt", mode="r") as letter_file:
+with open("Input/Letters/starting_letter.txt", mode="r") as letter_file:
     letters = letter_file.read()
     letters.strip("[]")
 
-with open("./Input/Names/invited_names.txt", mode="r") as name_file:
+with open("Input/Names/invited_names.txt", mode="r") as name_file:
     names = name_file.readlines()
 
 for name in names:

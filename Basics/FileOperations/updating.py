@@ -23,11 +23,11 @@
 #-------------- UPDATE ON MID OF THE FILE --------------------
 
 
-with open("newfile.txt","r+",encoding="utf-8") as file :
+with open("newfile.txt", "r+", encoding="utf-8") as file :
     list = file.readlines()
     list.insert(1,"Talha Duman\n")
     file.seek(0)
     file.writelines(list)
 
-with open("newfile.txt","r",encoding="utf-8") as file:
+with open("newfile.txt", "r", encoding="utf-8") as file:
     print(file.read())
