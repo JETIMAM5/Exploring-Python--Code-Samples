@@ -20,5 +20,5 @@ for (index, row) in student_data_frame.iterrows():
     # print(row)
     # print(row.student)
     if row.student == "Mathilda":
-        print(row.scores)
+        print(row.article_upvotes)
 
