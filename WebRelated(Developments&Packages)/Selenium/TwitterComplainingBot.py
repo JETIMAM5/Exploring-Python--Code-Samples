@@ -8,7 +8,7 @@ TWITTER_EMAIL = "email@gmail.com"
 TWITTER_PASSWORD = "password"
 
 
-class InternetSpeedTwitterBot():
+class InternetSpeedTwitterBot:
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.up = 0
